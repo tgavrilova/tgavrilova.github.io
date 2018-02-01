@@ -46,7 +46,11 @@ p:not(.createdBy) {
 .brand a:visited {
     color: #ffffff;
     text-decoration: none;
+<<<<<<< HEAD
     font-family: 'Pacifico', 'pacificoregular', sans-serif;
+=======
+    font-family: 'Pacifico', sans-serif;
+>>>>>>> parent of 6c07f0d... ff2
     text-transform: none;
 }
 
@@ -281,7 +285,11 @@ div.photo-box {
 
 .article h2 {
     font-size: 2em;
+<<<<<<< HEAD
     font-family: 'Pacifico','pacificoregular', cursive;
+=======
+    font-family: 'Pacifico', cursive;
+>>>>>>> parent of 6c07f0d... ff2
     font-weight: 100;
     text-align: center;
     line-height: 40px;
@@ -303,7 +311,6 @@ div.photo-box {
     display: inline-block;
     max-width: 250px;
     margin: 30px;
-	float:left;
 }
 
 .smail-cont:nth-child(n+4) {
