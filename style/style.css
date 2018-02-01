@@ -43,7 +43,7 @@ p:not(.createdBy) {
 .brand a:visited {
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Pacifico', Pacifico, sans-serif;
     text-transform: none;
 }
 
@@ -278,7 +278,7 @@ div.photo-box {
 
 .article h2 {
     font-size: 2em;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico',Pacifico, cursive;
     font-weight: 100;
     text-align: center;
     line-height: 40px;
@@ -300,6 +300,7 @@ div.photo-box {
     display: inline-block;
     max-width: 250px;
     margin: 30px;
+	float:left;
 }
 
 .smail-cont:nth-child(n+4) {
