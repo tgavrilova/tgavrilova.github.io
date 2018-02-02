@@ -1,6 +1,67 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
 @font-face {
-    font-family: Pacifico;
-    src: url('https://fonts.googleapis.com/css?family=Pacifico');
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.eot');
+    src: local('☺'), url('../fonts/Pacifico-Regular.woff') format('woff'), url('../fonts/Pacifico-Regular.ttf') format('truetype'), url('../fonts/Pacifico-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -10,7 +71,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+body {
+    font-family: "Times New Roman", sans-serif;
+}
 p:not(.createdBy) {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -93,8 +156,11 @@ nav ul li ul li {
 }
 
 nav ul li ul li a {
-    padding: 15px;
-    line-height: 20px;
+    padding: 0 15px;
+    line-height: 50px !important;
+    height: 50px;
+    display: block;
+
 }
 
 .nav-dropdown {
@@ -202,10 +268,6 @@ nav ul li ul li a {
 body {
     font-size: 1em;
     background: url(../add/8.jpg) no-repeat center center fixed;
-    transition: all .25s linear;
-    -o-transition: all .25s linear;
-    -moz-transition: all .25s linear;
-    -webkit-transition: all .25s linear;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -260,7 +322,7 @@ div.photo-box {
 }
 
 .main_cont p {
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 0 10px;
     text-indent: 30px;
     margin-top: 0;
@@ -308,7 +370,7 @@ div.photo-box {
 .smail {
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: auto;
     border: black solid 1px;
     border-radius: 125px;
     background: url(../add/PSD/sm_0001.png) white no-repeat 25px 60px;
@@ -322,7 +384,7 @@ div.photo-box {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.3em;
+    font-size: 1em;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -391,7 +453,7 @@ h5 {
     height: 40px;
     position: fixed;
     bottom: 0;
-    right:0;
+    right: 0;
     display: none;
     background-color: #585858;
     text-align: center;
@@ -419,7 +481,7 @@ h5 {
 
 .accordeon {
     background-color: rgba(0, 0, 0, 0.1);
-    color: #444;
+    color: #000;
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -492,13 +554,19 @@ h5 {
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
     -ms-filter: grayscale(1);
+    -webkit-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
     transition: 0.6s ease-in-out;
 }
 
 #gallery img:hover {
     border: deepskyblue solid 3px;
     cursor: pointer;
-    transition: 1s ease;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -507,14 +575,14 @@ h5 {
 }
 
 #gallery .button-to-photo {
-    width: 300px;
-    height: 50px;
+    width: 80%;
+    min-height: 50px;
     color: black;
     margin: 0 auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     padding-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -659,17 +727,12 @@ h5 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.aligner > .box {
-    height: 320px;
+.aligner, .aligner_sv, .aligner_two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.aligner_two > .box {
-    height: 380px;
-}
-
-.aligner_sv > .box {
-    height: 340px;
-}
 
 .bot-mar-cent {
     margin-bottom: 20px;
@@ -727,10 +790,19 @@ p.tm {
     border-radius: 0;
     margin-left: 33%;
 }
+.contact_info .fa-phone span {
+    font-family: "Times New Roman" serif;
+    font-size: 1em;
+}
+.contact_info .fa-envelope span {
+    font-family: "Times New Roman" serif;
+    font-size: 1em;
+}
 
 /*Стили футера*/
 footer .foot {
     margin-bottom: 30px;
+    height: 70px;
 }
 
 footer .social a i {
@@ -743,6 +815,7 @@ footer .social a i {
     font-size: 1.4em;
     border-radius: 7px;
     margin-right: 10px;
+    margin-top: 5px;
 }
 
 footer .social a i:hover {
@@ -768,9 +841,19 @@ footer .foot p {
     -moz-transition: all .25s linear;
     -ms-transition: all .25s linear;
     -webkit-transition: all .25s linear;
+    font-family: inherit;
 }
 .contacts .fa-phone {
     word-wrap: break-word;
+}
+
+.contacts .fa-phone span {
+    font-family: "Times New Roman" serif;
+    font-size: 1em;
+}
+.contacts .fa-envelope span {
+    font-family: "Times New Roman" serif;
+    font-size: 1em;
 }
 /* Modal box */
 
@@ -806,7 +889,7 @@ footer .foot p {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 60%;
+    width: 80%;
     border-radius: 20px;
 }
 
@@ -845,13 +928,13 @@ footer .foot p {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-button.trigger {
+button.trigger-for-modal {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     color: blue;
 }
 
-button.trigger:hover {
+button.trigger-for-modal:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -880,7 +963,6 @@ button.trigger:hover {
 }
 
 .modal-main-content .column:nth-child(2) {
-    text-align: right;
     width: 40%;
 }
 
@@ -907,16 +989,14 @@ button.trigger:hover {
     color: white;
 }
 
-@media only screen and (max-width: 1260px) {
-    .scrollup {
-        right: 20px;
-    }
-}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
 @media only screen and (max-width: 979px) {
-    .container {
-        width: 768px;
-    }
 
     .modal-main-content .column {
         display: block;
@@ -926,29 +1006,35 @@ button.trigger:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 480px;
+    .small-size-hidden {
+        display: none;
     }
-
-    .smail-cont {
-        margin-bottom: 20px;
-        margin-top: 20px;
+    .modal-content h2 {
+        margin-bottom: 10px;
+    }
+    .forsmiles {
+        display: none;
     }
 
     p.contact_info img {
         width: 150px;
     }
 
-}
-
-@media only screen and (max-width: 496px) {
-    .container {
-        width: 385px;
-    }
-
     .foot p {
         display: none;
     }
+
+    #foot * {
+        text-align: center;
+        float: none;
+    }
+    #foot .social .vk {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+
 
     .contacts {
         float: right;
@@ -969,12 +1055,126 @@ button.trigger:hover {
     .modal-content {
         width: 80%;
     }
-}
-
-@media only screen and (max-width: 402px) {
-    .container {
-        width: 330px;
+    footer .social a i {
+        display: none;
     }
 }
 
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
 
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

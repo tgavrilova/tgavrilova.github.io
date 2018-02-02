@@ -52,11 +52,11 @@ function out() {
 var button = $(".button-to-photo");
 button.hover(function () {
     var tl = new TimelineMax();
-    tl.to(button, .2, {scale: 1.1})
+    tl.to(button, .2, {scale: 1.1, ease:Linear.easeNone})
 
 }, function () {
     var tl = new TimelineMax();
-    tl.to(button, .2, {scale: 1})
+    tl.to(button, .2, {scale: 1, ease:Linear.easeNone})
 });
 
 /* Modal box */
@@ -78,20 +78,3 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-
-
-
-/* Аккордеое */
-var acc = document.getElementsByClassName("accordeon");
-var i;
-for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-this.classList.toggle("active-ac");
-var panel = this.nextElementSibling;
-if (panel.style.maxHeight){
-panel.style.maxHeight = null;
-} else {
-panel.style.maxHeight = panel.scrollHeight + "px";
-}
-});
-}
