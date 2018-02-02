@@ -946,6 +946,7 @@ button.trigger-for-modal:hover {
     box-sizing: border-box;
     padding: 10px;
     float: left;
+    width: 100%;
 }
 
 .modal-content h2 {
@@ -959,11 +960,6 @@ button.trigger-for-modal:hover {
 .modal-main-content .column:nth-child(1) {
     text-align: justify;
     text-indent: 20px;
-    width: 60%;
-}
-
-.modal-main-content .column:nth-child(2) {
-    width: 40%;
 }
 
 .modal-main-content .column:nth-child(2) h3:first-child {
