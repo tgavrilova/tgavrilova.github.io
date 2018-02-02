@@ -788,14 +788,14 @@ p.tm {
 .contact_info img.social-img {
     width: 120px;
     border-radius: 0;
-    margin-left: 33%;
+    float: right;
 }
 .contact_info .fa-phone span {
-    font-family: "Times New Roman" serif;
+    font-family: "Times New Roman", serif;
     font-size: 1em;
 }
 .contact_info .fa-envelope span {
-    font-family: "Times New Roman" serif;
+    font-family: "Times New Roman", serif;
     font-size: 1em;
 }
 
