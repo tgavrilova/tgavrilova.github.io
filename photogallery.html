@@ -531,39 +531,7 @@
 <script src="js/TweenMax.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/main.js"></script>
-<script>
-    function displayPhoto(myButton, myClass, classToHide, otherButtons) {
-        myButton.click(function () {
-                myButton.addClass("selected");
-                myClass.removeClass("display-none");
-                otherButtons.removeClass("selected");
-                classToHide.addClass("display-none");
-                return false;
-            }
-        )
-    }
 
-    var button = $('.humans');
-    var photos = $('.human');
-    var hideClasses = $('.animal,.nature-photo,.movement-photo');
-    var otherButtons = $('.gallery-filter:not(:nth-child(1))');
-    displayPhoto(button, photos, hideClasses, otherButtons);
-    var button = $('.animals');
-    var photos = $('.animal');
-    var hideClasses = $('.human,.nature-photo,.movement-photo');
-    var otherButtons = $('.gallery-filter:not(:nth-child(2))');
-    displayPhoto(button, photos, hideClasses, otherButtons);
-    var button = $('.nature');
-    var photos = $('.nature-photo');
-    var hideClasses = $('.animal,.human,.movement-photo');
-    var otherButtons = $('.gallery-filter:not(:nth-child(3))');
-    displayPhoto(button, photos, hideClasses, otherButtons);
-    var button = $('.movement');
-    var photos = $('.movement-photo');
-    var hideClasses = $('.animal,.nature-photo,.human');
-    var otherButtons = $('.gallery-filter:not(:nth-child(4))');
-    displayPhoto(button, photos, hideClasses, otherButtons);
-</script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

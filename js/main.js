@@ -78,3 +78,25 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+/* Gallery filters */
+function toggleHuman() {
+    $('a.human[data-fancybox]').fadeToggle();
+    $('a[data-fancybox]:not(.human)').fadeOut("fast", "linear");
+}
+function toggleAnimal() {
+    $('a.animal[data-fancybox]').fadeToggle();
+    $('a[data-fancybox]:not(.animal)').fadeOut("fast", "linear");
+}
+function toggleMovement() {
+    $('a.movement-photo[data-fancybox]').fadeToggle();
+    $('a[data-fancybox]:not(.movement-photo)').fadeOut("fast", "linear");
+}
+function toggleNature() {
+    $('a.nature-photo[data-fancybox]').fadeToggle();
+    $('a[data-fancybox]:not(.nature-photo)').fadeOut("fast", "linear");
+}
+$(".humans").click(toggleHuman);
+$(".animals").click(toggleAnimal);
+$(".movement").click(toggleMovement);
+$(".nature").click(toggleNature);
