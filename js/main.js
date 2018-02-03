@@ -80,23 +80,36 @@ closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 /* Gallery filters */
+var humans = $(".humans"),
+    animals = $(".animals"),
+    movement = $(".movement"),
+    nature = $(".nature");
+
 function toggleHuman() {
-    $('a.human[data-fancybox]').fadeToggle();
+    $('a.human[data-fancybox]').fadeToggle("slow", "linear");
     $('a[data-fancybox]:not(.human)').fadeOut("fast", "linear");
+    humans.toggleClass('selected');
+    $('.gallery-filter:not(.humans)').removeClass('selected');
 }
 function toggleAnimal() {
-    $('a.animal[data-fancybox]').fadeToggle();
+    $('a.animal[data-fancybox]').fadeToggle("slow", "linear");
     $('a[data-fancybox]:not(.animal)').fadeOut("fast", "linear");
+    animals.toggleClass('selected');
+    $('.gallery-filter:not(.animals)').removeClass('selected');
 }
 function toggleMovement() {
-    $('a.movement-photo[data-fancybox]').fadeToggle();
+    $('a.movement-photo[data-fancybox]').fadeToggle("slow", "linear");
     $('a[data-fancybox]:not(.movement-photo)').fadeOut("fast", "linear");
+    movement.toggleClass('selected');
+    $('.gallery-filter:not(.movement)').removeClass('selected');
 }
 function toggleNature() {
-    $('a.nature-photo[data-fancybox]').fadeToggle();
+    $('a.nature-photo[data-fancybox]').fadeToggle("slow", "linear");
     $('a[data-fancybox]:not(.nature-photo)').fadeOut("fast", "linear");
+    nature.toggleClass('selected');
+    $('.gallery-filter:not(.nature)').removeClass('selected');
 }
-$(".humans").click(toggleHuman);
-$(".animals").click(toggleAnimal);
-$(".movement").click(toggleMovement);
-$(".nature").click(toggleNature);
+humans.click(toggleHuman);
+animals.click(toggleAnimal);
+movement.click(toggleMovement);
+nature.click(toggleNature);

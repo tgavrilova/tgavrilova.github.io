@@ -638,11 +638,6 @@ h5 {
 
 .gallery-filter.selected {
     background-color: rgba(255, 255, 255, 1);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none;
 }
 
 /*Стили прайсов*/
