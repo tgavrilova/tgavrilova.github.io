@@ -1065,7 +1065,13 @@ button.trigger-for-modal:hover {
 
     .modal-main-content .column {
         padding: 0;
+        margin-bottom: 0;
     }
+
+    .modal-main-content .column:nth-child(2) .my-social-links {
+        margin-bottom: 0;
+    }
+
 }
 
 @media print,
