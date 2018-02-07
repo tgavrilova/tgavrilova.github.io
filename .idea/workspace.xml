@@ -68,8 +68,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="1062" column="27" lean-forward="false" selection-start-line="1062" selection-start-column="27" selection-end-line="1062" selection-end-column="27" />
+            <state relative-caret-position="441">
+              <caret line="1062" column="24" lean-forward="false" selection-start-line="1062" selection-start-column="24" selection-end-line="1062" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
       <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
+            <state relative-caret-position="469">
               <caret line="78" column="48" lean-forward="false" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
               <folding />
             </state>
@@ -163,7 +163,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-561" />
     <option name="y" value="-37" />
     <option name="width" value="1400" />
@@ -235,15 +235,15 @@
       <workItem from="1517664828667" duration="1476000" />
       <workItem from="1517666343749" duration="30000" />
       <workItem from="1517998036562" duration="544000" />
-      <workItem from="1517998769132" duration="33000" />
+      <workItem from="1517998769132" duration="133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10154000" />
+    <option name="totallyTimeSpent" value="10254000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1045" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1045" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17845829" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -719,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
+        <state relative-caret-position="469">
           <caret line="78" column="48" lean-forward="false" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
           <folding />
         </state>
@@ -727,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="1062" column="27" lean-forward="false" selection-start-line="1062" selection-start-column="27" selection-end-line="1062" selection-end-column="27" />
+        <state relative-caret-position="441">
+          <caret line="1062" column="24" lean-forward="false" selection-start-line="1062" selection-start-column="24" selection-end-line="1062" selection-end-column="24" />
           <folding />
         </state>
       </provider>
