@@ -1050,30 +1050,12 @@ button.trigger-for-modal:hover {
         display: none;
     }
 
-    .modal-main-content,
     .modal-content h2 {
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-        transform: scale(0.8);
+        font-size:1.1em;
+        margin-bottom: 5px;
     }
-
-    .modal-content h2 {
-        margin-bottom: 0;
-    }
-
-    .modal-main-content .column {
-        padding: 0;
-        margin-bottom: 0;
-    }
-
-    .modal-main-content .column:nth-child(2) .my-social-links {
-        margin-bottom: 0;
-    }
-
-    .modal-content {
-        max-height: 85%;
+    .modal-main-content p {
+        font-size:0.8em;
     }
 }
 
