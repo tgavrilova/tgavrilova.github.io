@@ -1072,6 +1072,9 @@ button.trigger-for-modal:hover {
         margin-bottom: 0;
     }
 
+    .modal-content {
+        max-height: 85%;
+    }
 }
 
 @media print,
