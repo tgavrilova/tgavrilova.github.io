@@ -1071,6 +1071,11 @@ and (orientation: landscape) {
     .modal-main-content p {
         font-size:0.8em;
     }
+
+    .modal-content {
+        width: 95%;
+    }
+
 }
 
 @media print,
