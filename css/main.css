@@ -1059,6 +1059,10 @@ button.trigger-for-modal:hover {
         transform: scale(0.8);
     }
 
+    .modal-content h2 {
+        margin-bottom: 5px;
+    }
+
     .modal-main-content .column {
         padding: 0;
     }
