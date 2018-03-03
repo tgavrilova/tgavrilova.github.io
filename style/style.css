@@ -46,6 +46,10 @@ p:not(.createdBy) {
     text-transform: none;
 }
 
+.brand a img {
+    height: 60px;
+}
+
 .nav-container {
     max-width: 1000px;
     margin: 0 auto;

@@ -38,26 +38,6 @@ $(document).ready(function () {
 
 });
 
-/*Анимация смайликов*/
-$(".smail-cont").hover(over, out);
-
-function over() {
-    TweenMax.to($(this).find(".smail"), 0.3, {rotation: 360, scale: 1.2, delay: 0.3, ease: Power1.easeOut})
-}
-
-function out() {
-    TweenMax.to($(this).find(".smail"), 0.3, {rotation: 0, scale: 1, overwrite: "all"})
-}
-
-var button = $(".button-to-photo");
-button.hover(function () {
-    var tl = new TimelineMax();
-    tl.to(button, .2, {scale: 1.1, ease:Linear.easeNone})
-
-}, function () {
-    var tl = new TimelineMax();
-    tl.to(button, .2, {scale: 1, ease:Linear.easeNone})
-});
 
 /* Modal box */
 
@@ -113,3 +93,6 @@ humans.click(toggleHuman);
 animals.click(toggleAnimal);
 movement.click(toggleMovement);
 nature.click(toggleNature);
+
+
+

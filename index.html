@@ -15,6 +15,7 @@
         <link href="style/jquery.fancybox.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -26,7 +27,7 @@
 
         <section class="navigation">
             <div class="nav-container">
-                <div class="brand"><a href="index.html">Tatiana Gavrilova</a></div>
+                <div class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
                 <nav>
                     <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                     <ul class="nav-list">
@@ -64,42 +65,75 @@
                         class="bold">Я всегда открыта для сотрудничества и работы над интересными проектами.</span> Буду
                     рада новым знакомствам!</p>
             </div>
-            <div class="forsmiles">
-                <div class="smail-cont one">
-                    <div class="smail sm-one"></div>
-                    <span>Индивдиуальный подход к клиенту</span></div>
-                <div class="smail-cont two">
-                    <div class="smail sm-two"></div>
-                    <span>Творческий подход к съемке</span></div>
-                <div class="smail-cont three">
-                    <div class="smail sm-three"></div>
-                    <span>Своевременное выполнение работы</span></div>
-                <div class="smail-cont four">
-                    <div class="smail sm-four"></div>
-                    <span>Море позитива</span></div>
-                <div class="smail-cont five">
-                    <div class="smail sm-five"></div>
-                    <span>Доступные цены</span></div>
-                <div class="smail-cont six">
-                    <div class="smail sm-six"></div>
-                    <span>Довольные клиенты</span></div>
-            </div>
+
             <div id="gallery" class="photo-box">
                 <div class="article gallery">
-                    <h2>Примеры фоторабот</h2></div>
-                <div class="photos">
-                    <a data-fancybox="gallery" href="img/photo/IMG_3699!.jpg"> <img src="img/photo/JPEG/IMG_3699!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_3771!.jpg"> <img src="img/photo/JPEG/IMG_3771!.jpg"> </a>
-                    <a data-fancybox="gallery" class="human" href="img/photo/IMG_3767!.jpg"> <img
-                        src="img/photo/JPEG/IMG_3767!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_4373!.jpg"> <img src="img/photo/JPEG/IMG_4373!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_4846!.jpg"> <img src="img/photo/JPEG/IMG_4846!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_5400!.jpg"> <img src="img/photo/JPEG/IMG_5400!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/olga/51!.jpg"> <img src="img/photo/olga/JPEG/51!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_5155-2!.jpg"> <img src="img/photo/JPEG/IMG_5155-2!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_5467!.jpg"> <img src="img/photo/JPEG/IMG_5467!.jpg"> </a>
-                    <a data-fancybox="gallery" href="img/photo/IMG_3870!.jpg"> <img src="img/photo/JPEG/IMG_3870!.jpg"> </a>
+                    <h2>Примеры фоторабот</h2>
                 </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div id="s-w" class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/photo/olga/51!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_5155-2!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_5467!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_3870.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4091!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4308!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4554!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4622.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4635.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_4747!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/IMG_5472!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/olga/25!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/photo/olga/27!.jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_0214..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_0259..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_0338..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_0347..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_0417..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1530..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1560-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1706-3..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1723-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1797-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_1994..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_2099-2.%20.jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_2498-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_2696-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_3014-3..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_8041..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/animals/IMG_9451...jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/6-3..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/9-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/12-4..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/19-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/23-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_2391-9..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_2391-11...jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_3200-3..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_8436-3.%20.jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_8750-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_8777-8..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/nature/IMG_8900-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_0697-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_0724-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_0749-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_0751-2..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_9233..jpg"></div>
+                    <div class="swiper-slide"><img src="img/anm/movement/IMG_9379...jpg"></div>
+                    
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+
+            </div>
+
                 <div class="forbutton">
                     <div class="button-to-photo"><a href="photogallery.html" class="button">Перейти в фотогалерею</a></div>
                 </div>
@@ -160,9 +194,10 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/TweenMax.min.js"></script>
+        <script src="js/swiper.min.js"></script>
         <script src="js/jquery.fancybox.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/index-page.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

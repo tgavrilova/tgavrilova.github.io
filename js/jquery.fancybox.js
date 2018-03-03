@@ -275,7 +275,7 @@
         media : {},
 
         slideShow : {
-            autoStart : false,
+            autoStart : true,
             speed     : 4000
         },
 
