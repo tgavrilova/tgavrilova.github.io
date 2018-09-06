@@ -94,5 +94,5 @@ animals.click(toggleAnimal);
 movement.click(toggleMovement);
 nature.click(toggleNature);
 
-
+$(document).ready(function(){$("a.go-to").click(function(){return $("html, body").animate({scrollTop:$($(this).attr("href")).offset().top+"px"},{duration:500,easing:"swing"}),!1})});
 

@@ -271,7 +271,7 @@ nav ul li ul li a {
 
 body {
     font-size: 1em;
-    background: url(../img/22.jpg) no-repeat center center fixed;
+    background: url(../img/22.jpg) #5DB5EE no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -459,7 +459,9 @@ h5 {
 #small {
     font-size: 0.8em;
 }
-
+.img-small {
+    height: 20px;
+}
 /*Стили галереи*/
 
 #gallery .article {
@@ -606,7 +608,9 @@ h5 {
 .prices {
     text-align: center;
 }
-
+.prices h2 {
+    color:#308CDD;
+}
 .box {
     display: inline-block;
     margin: 0 20px 10px 25px;
@@ -631,7 +635,7 @@ h5 {
 }
 
 .box h1 {
-    margin: 10px 0;
+    margin: 0;
     font-size: 2em;
 }
 
